@@ -18,12 +18,13 @@ import java.io.Serializable;
 @AllArgsConstructor
 @ToString
 @Entity
-public class Transaction implements Serializable{
+public class ItemList implements Serializable{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String codigoPedido;
-    private String codigoCliente;
-    private String totalAmmount;
+    private String produto;
+    private float preco;
+    private int quantidade;
     public String getCodigoPedido() {
         return codigoPedido;
     }
@@ -31,15 +32,21 @@ public class Transaction implements Serializable{
         this.codigoPedido = codigoPedido;
     }
     public String getCodigoCliente() {
-        return codigoCliente;
+        return produto;
     }
-    public void setCodigoCliente(String codigoCliente) {
-        this.codigoCliente = codigoCliente;
+    public void setProduto(String produto) {
+        this.produto = produto;
     }
-    public String getTotalAmmount() {
-        return totalAmmount;
+    public float getPreco() {
+        return preco;
     }
-    public void setTotalAmmount(String totalAmmount) {
-        this.totalAmmount = totalAmmount;
+    public void setPreco(float preco) {
+        this.preco = preco;
+    }
+    public int getQuantidade() {
+        return quantidade;
+    }
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 }
