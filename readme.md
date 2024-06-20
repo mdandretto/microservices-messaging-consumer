@@ -1,6 +1,8 @@
 # RabbitMQ Consumer
 
-> Demo of a Springboot project that consumes RabbitMQ messages
+> Demo of a Springboot project that consumes RabbitMQ messages from the producer service at:
+> https://github.com/mdandretto/microservices-messaging-producer
+
 
 ## 💻 Pre-requisites
 
